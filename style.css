@@ -1,0 +1,325 @@
+body {
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+  }
+  
+  a {
+    color: inherit;
+    font-style: normal;
+    text-decoration: inherit;
+    cursor: pointer;
+  }
+  
+  a:hover {
+    opacity: 0.7;
+  }
+  
+  .nav {
+    position: absolute;
+    width: 50%;
+    top: 40px;
+    left: 100px;
+    
+  }
+  
+  .main-section{
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),url(/img/techsupport.jpg) no-repeat center center scroll;
+    /*background: #2B2D42;*/
+    display: table;
+    width: 100%;
+    height: 700px;
+    position: relative;
+    background-size: cover;
+    color: #FFFFFA;
+    animation-name: anim;
+    animation-duration: 2s;
+
+  }
+  
+  .main-section h1 {
+    font-size: 60px;
+    
+  }
+  
+  .main-section h1:after {
+    content: '  ';
+    display: block;
+    width: 70px;
+    margin: 10px auto -10px 0;
+    border: 2px solid #fff;
+  }
+  
+  .main-section p {
+    font-size: 30px;
+    color: #deeef5;
+    letter-spacing: 1px;
+  }
+  
+  .main-section > .section-content {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 10px 100px;
+    text-align: left;
+    
+  }
+  
+  .main-section p {
+    font-size: 20px;
+  }
+  
+  .main-section h2 {
+    font-weight: 100;
+    color: #deeef5;
+  }
+  
+  .main-section h2 > strong {
+    color: #deeef5;
+  }
+  
+  
+  @keyframes anim {
+    0% {
+      transform: translateX(-100px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+
+
+
+
+
+  .section {
+    display: block;
+  }
+  
+  .section-content {
+    padding: 100px 100px;
+    display: block;
+    overflow: auto;
+  }
+  
+  .section-content .content > div {
+    padding-left: 20px;
+  }
+  
+  .gray-bg > .section-content{
+    /* background-color: #3295be; */
+    background: #40434E;
+  }
+  
+  
+  .content p {
+    margin: 0;
+    font-size: 18px;
+    color: white;
+    line-height: 30px;
+    letter-spacing: 1px;
+  }
+  
+  .title > h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 26px;
+    letter-spacing: 2px;
+  }
+  
+  .white-bg .title h1 {
+    color: #D23833;
+  }
+  
+  .white-bg > .section-content {
+    background-color: white;
+  }
+  
+
+  .gray-bg .title h1 {
+    color: white;
+  }
+  
+  .white-bg p, .white-bg h2 {
+    color: #58798c;
+  }
+  
+  .title h1:after {
+    content: ' ';
+    display: block;
+    width: 50px;
+    margin: 10px 0;
+  }
+  
+  .gray-bg .title > h1:after {
+    border: 2px solid #fff;
+  }
+  
+  .white-bg .title > h1:after {
+    border: 2px solid #D23833;
+  }
+  
+  .title {
+    float: left;
+    width: 20%;
+  }
+  
+  .content {
+    float: left;
+    width: 80%;
+  }
+  
+  .box {
+    border: 1px solid #F71735;
+    border-radius: 10px;
+    padding: 20px;
+    color: white;
+    margin-bottom: 20px;
+  
+    transition: opacity 0.5s;
+    -webkit-transition: all ease 0.5s;
+    -moz-transition: all ease 0.5s;
+    -o-transition: all ease 0.5s;
+    -ms-transition: all ease 0.5s ;
+    transition: all ease 0.5s ;
+  }
+  
+  .box:hover {
+    background: rgba(255,255,255,0.1);
+  }
+  
+  .resumebox {
+    color: rgb(216, 37, 37);
+    font-size: 17px;
+    transition: all .3s;
+  }
+  .resumebox:hover {
+    padding-left: 10px;
+    background-color: rgb(243, 187, 187);
+    border-radius: 200px;
+    box-shadow: 5px 7px 10px #999;
+  }
+
+
+
+  h2 {
+    margin: 0;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 5px;
+  }
+  
+  .gray-bg h2 {
+    color: white;
+    text-transform: none;
+  }
+  
+  .gray-bg p {
+    color: #deeef5;
+  }
+  
+  .box h2, .box img {
+    display: inline;
+  }
+  
+  .box img {
+    margin-left: 10px;
+  }
+  
+  .box a:hover {
+    opacity: 0.5;
+  }
+  
+  .box p {
+    color: #FDFFFC;
+  }
+  
+  .small {
+    font-size: 14px;
+    color: #FDFFFC;
+    margin-bottom: 10px;
+  }
+  
+  .w3-progress-container {
+    width:90%;
+    height:0.7em;
+    position:relative;
+    background-color:#deeef5;
+    margin-bottom: 30px;
+    transition: opacity 0.5s;
+   
+  }
+  
+  .w3-progress-container:hover {
+    opacity: 0.5;
+  }
+  
+  .w3-progressbar {
+    background: #D23833;
+    height:100%;
+    position:absolute;
+    line-height:inherit;
+  }
+  
+  .dual-col {
+    width: 50%;
+    float: left;
+  }
+  
+  .dual-col h2 {
+    color: #F71735;
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  
+  .dual-col img {
+    width: 90%;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  
+  a > img {
+    cursor: pointer;
+  }
+  
+  .dual-col.img-col {
+    margin-bottom: 60px;
+  }
+  
+  .dual-col.img-col:nth-child(7) {
+    margin-bottom: 0;
+  }
+  
+  .dual-col.img-col:last-child {
+    margin-bottom: 0;
+  }
+  
+  .tag {
+    border: 1px solid #ddd;
+    display: inline-block;
+    border-radius: 6px;
+    padding: 8px 10px;
+    font-size: 12px;
+    color: #aaa;
+    text-transform: uppercase;
+    margin-right: 5px;
+  }
+  
+  .footer .section-content {
+    padding: 0 60px;
+    border-top: 1px #eee solid;
+    color: #aaa;
+  }
+
+  .contact1{
+    background: linear-gradient(rgba(0, 0, 0, .8), rgba(0, 0, 0, .8)),url(/img/TrumbullCountry2.jpg)
+    no-repeat center center scroll;
+    width: 100%;
+    height: 800px;
+    background-size: cover;
+    color: #FFFFFA;
+  }
+  
